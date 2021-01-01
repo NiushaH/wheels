@@ -10,7 +10,7 @@ gem 'puma', '~> 5.0.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6.0.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-# gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 4.2.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -32,10 +32,10 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4.2'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.2'
+  gem 'web-console', '>= 4.1.0'
+  gem 'listen', '~> 3.2.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '2.1.1'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
@@ -44,7 +44,12 @@ group :test do
   gem 'capybara', '>= 3.32.2'
   gem 'selenium-webdriver', '3.142.7'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  gem 'webdrivers',               '4.3.0'
+  gem 'rails-controller-testing', '1.0.4'
+  gem 'minitest',                 '5.11.3'
+  gem 'minitest-reporters',       '1.3.8'
+  gem 'guard',                    '2.16.2'
+  gem 'guard-minitest',           '2.4.6'
 end
 
 group :production do
