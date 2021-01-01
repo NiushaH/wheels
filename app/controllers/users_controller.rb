@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    render :index
   end
 
   # GET /users/1
@@ -43,7 +44,7 @@ class UsersController < ApplicationController
    
   def destroy
     @user.destroy
-    
+
   end
 
   private
